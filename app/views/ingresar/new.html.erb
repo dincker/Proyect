@@ -1,0 +1,15 @@
+<h1>Ingrese</h1>
+<%= form_for :usuario, url: ingresar_index_path do |f| %>
+<p>
+	<%= f.label :Nombre %><br>
+	<%= f.text_field :nombre %>
+</p>
+
+<p>
+	<%= f.label :Password %><br>
+	<%= f.text_field :password_digest %>
+</p>
+<p>
+	<%= f.submit 'Ingresar'%>
+</p>
+<% end %>

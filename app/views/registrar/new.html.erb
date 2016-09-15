@@ -1,0 +1,37 @@
+<h1>Nuevo Usuario</h1>
+
+
+	<%= form_for :usuario, url: registrar_index_path do |f| %>
+
+	<p>
+		<%= f.label :Nombre %><br>
+		<%= f.text_field :nombre %>
+	</p>
+	<p>
+		<%= f.label :Apellido %><br>
+		<%= f.text_field :apellido %>
+	</p>
+	<p>
+		<%= f.label :fono %><br>
+		<%= f.text_field :fono %>
+	</p>
+	<p>
+		<%= f.label :email %><br>
+		<%= f.text_field :email %>
+	</p>
+	<p>
+		<%= f.label :Direccion %><br>
+		<%= f.text_field :direccion %>
+	</p>
+	<p>
+		<%= f.label :Password %><br>
+		<%= f.text_field :password %>
+	</p>
+	<p>
+		<%= f.label :Confirmar_password%><br>
+		<%= f.text_field :password_confirmation %>
+	</p>
+	<p>
+    <%= f.submit 'crear'%>
+  	</p>
+	<% end %>
